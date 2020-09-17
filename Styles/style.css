@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+}
+
+body,
+p {
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.3;
+}
+
+header {
+  overflow: hidden;
+  background-color: #2a5f42;
+  padding: 20px;
+}
+
+h1 img {
+  height: 30px;
+  float: left;
+  line-height: 1.2;
+}
+
+nav {
+  float: right;
+  padding-top: 2px;
+}
+
+nav a {
+  color: #eee;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #ffb6c4;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background-image: url(../Assets/header-background.svg);
+  background-size: cover;
+  background-position: right center;
+  padding: 275px 0;
+}
+
+.hero div {
+  background: rgba(256, 240, 200, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  max-width: 800px;
+  font-size: 80px;
+  color: #fe5504;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.about {
+  background-color: #ffb6c4;
+  color: #2a5f42;
+  text-align: center;
+  padding: 60px 30px 70px;
+}
+
+.about h3 {
+  font-size: 36px;
+  max-width: 800px;
+  margin: 0 auto 45px auto;
+}
+
+.about p {
+  font-size: 26px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.food {
+  background-color: #ffda00;
+  display: flex;
+  align-items: center;
+}
+
+.food-text {
+  width: 50%;
+  color: #102a1d;
+  padding: 40px 0;
+}
+
+.food-text h4,
+.food-text p {
+  max-width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.food h4 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.food-text h4 {
+  margin-bottom: 30px;
+}
+
+.food-text p {
+  font-size: 20px;
+}
+
+.food img {
+  width: 50%;
+}
+
+.quote {
+  background-color: #ffd7b3;
+  padding: 130px 80px;
+}
+
+blockquote {
+  color: #2a5f42;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.images {
+  overflow: hidden;
+}
+
+.images img {
+  width: 33.3%;
+  float: left;
+}
+
+section.location {
+  overflow: hidden;
+  background-color: #2a5f42;
+}
+
+.location div {
+  width: 33.3%;
+  float: left;
+  padding: 55px 0;
+  text-align: center;
+  color: #ffffee;
+}
+
+.location h4 {
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+.location p {
+  margin: 0 auto;
+}
+
+.find-us h4,
+.find-us p {
+  max-width: 250px;
+}
+
+.map img {
+  width: 225px;
+  border-radius: 100%;
+/*   margin: 0 auto 0 30px; */
+  display: inline-block;
+  text-align: center;
+}
+
+.location h4 {
+  margin-bottom: 30px;
+}
+
+.location h4:nth-child(odd) {
+  padding-top: 15px;
+}
+
+div.hours p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.logo {
+  color: #fe5504;
+  padding: 50px 20px 60px;
+  text-align: center;
+}
+
+.logo img {
+  margin: 50px 25px 0;
+  width: 150px;
+  vertical-align: middle;
+}
+
+.logo img.nyt {
+  width: 250px;
+}
+
+footer {
+  background-color: #ffb6c4;
+  padding: 20px;
+  overflow: hidden;
+}
+
+footer img {
+  float: left;
+}
+
+footer a {
+  float: right;
+  padding-top: 3px;
+  color: #2a5f42;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-transform, letter-spacing 0.2s;
+}
+
+footer a:hover {
+  border-bottom: 2px solid #2f6a49;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*Media queries*/
+
+@media (max-width: 1000px) {
+  .food {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .food-text {
+    text-align: center;
+  }
+
+  .food-text,
+  .food img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 250px 0;
+  }
+
+  .hero h2 {
+    max-width: 700px;
+    font-size: 70px;
+  }
+
+  .about {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .location h4 {
+    font-size: 20px;
+  }
+
+  .location h4:nth-child(odd) {
+    padding-top: 10px;
+  }
+
+  .location p {
+    font-size: 16px;
+    max-width: 200px;
+  }
+  .map img {
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 750px) {
+  h1 img,
+  nav,
+  .images img,
+  .location .find-us,
+  .location .map,
+  .location .hours {
+    float: none;
+  }
+
+  h1 img {
+    width: 50%;
+    height: initial;
+  }
+
+  nav a:hover {
+    text-transform: none;
+    border-bottom: none;
+    letter-spacing: 0;
+  }
+
+  nav a:first-child {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 200px 0;
+  }
+
+  .hero div {
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    max-width: 575px;
+    font-size: 55px;
+  }
+
+  .about h3,
+  .food-text h4 {
+    font-size: 24px;
+  }
+
+  .about {
+    padding: 40px;
+  }
+
+  .about p {
+    font-weight: 600;
+  }
+
+  .about p,
+  .food-text p {
+    font-size: 18px;
+  }
+
+  .quote {
+    padding: 70px 50px;
+  }
+
+  blockquote {
+    font-size: 32px;
+  }
+
+  .images img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .location div {
+    width: 100%;
+    padding: 0;
+  }
+
+  .location h4:nth-child(odd) {
+    padding-top: 0;
+  }
+
+  .location p {
+    max-width: 350px;
+  }
+
+  .location .find-us {
+    padding: 70px 0 40px;
+  }
+
+  .location .hours {
+    padding: 40px 0 70px;
+  }
+
+  .logo img {
+    display: block;
+    margin: 35px auto;
+  }
+
+  .logo {
+    padding: 50px 20px 20px;
+  }
+
+  footer a:hover {
+    text-transform: none;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 475px) {
+  header {
+    padding: 20px 20px 12px;
+  }
+
+  .hero {
+    padding: 150px 0;
+  }
+
+  .hero div {
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+    max-width: 400px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .about h3,
+  .food-text h4 {
+    margin-bottom: 20px;
+  }
+
+  .food-text h4,
+  .food-text p {
+    padding: 0 40px;
+  }
+  
+  .food p {
+    font-size: 16px;
+  }
+
+  .quote {
+    padding: 60px;
+  }
+
+  blockquote {
+    font-size: 26px;
+  }
+
+
+
+  .location .find-us {
+    padding: 50px 0 35px;
+  }
+
+  .location .hours {
+    padding: 25px 0 50px;
+  }
+
+  footer a,
+  footer img {
+    float: none;
+    display: block;
+  }
+  
+  footer a {
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+}
+
+@media (max-width: 350px) {
+    nav a {
+    font-size: 12px;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+  }
+  
+	.about p,
+  .food-text p {
+    font-size: 14px;
+  }
+  
+  .quote {
+    padding: 40px;
+  }
+  
+  blockquote {
+    font-size: 22px;
+  }
+}
